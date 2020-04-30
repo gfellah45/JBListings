@@ -1,0 +1,9 @@
+.App {
+	font-family: "Spartan", sans-serif;
+}
+body {
+	background-color: hsl(180, 52%, 96%);
+}
+html {
+	scroll-behavior: smooth;
+}
