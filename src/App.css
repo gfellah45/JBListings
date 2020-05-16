@@ -1,9 +1,57 @@
 .App {
 	font-family: "Spartan", sans-serif;
+	width: 100%;
 }
-body {
-	background-color: hsl(180, 52%, 96%);
-}
+
 html {
 	scroll-behavior: smooth;
+	background-color: #c6f6d5;
+}
+/* entry page */
+.home__page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+	background-color: #c6f6d5;
+}
+
+.game__page {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin: 10rem auto;
+}
+.choice__container {
+	margin-bottom: 0.5rem;
+
+	display: flex;
+	font-size: 1rem;
+}
+/* .choice__prefix {
+	padding: 1rem 2.5rem;
+} */
+.choice__text {
+	padding: 0.9rem;
+	width: 100%;
+}
+@media screen and (min-width: 600px) {
+	.game__page {
+		width: 50%;
+	}
+	.choice__container {
+		margin-bottom: 0.5rem;
+		width: 100%;
+		display: flex;
+		font-size: 1rem;
+		background-color: #fff;
+	}
+	.choice__prefix {
+		padding: 1rem 2.5rem;
+	}
+	.choice__text {
+		padding: 1rem;
+		width: 100%;
+	}
 }
