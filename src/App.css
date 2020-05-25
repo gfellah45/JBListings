@@ -36,6 +36,13 @@ html {
 	padding: 0.9rem;
 	width: 100%;
 }
+.submit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vmin;
+}
 @media screen and (min-width: 600px) {
 	.game__page {
 		width: 50%;

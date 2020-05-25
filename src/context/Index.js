@@ -36,7 +36,7 @@ const QuizReducer = (state, action) => {
 		case quizAction.ADD_Q:
 			return {
 				...state,
-				availableQuestion: state.questions.slice(
+				questions: state.questions.slice(
 					action.payload,
 					state.questions.length
 				),
@@ -77,7 +77,7 @@ export function QuizProvider({ children }) {
 	return (
 		<QuizContext.Provider
 			value={{
-				questions: state.availableQuestion,
+				questions: state.questions,
 				loadQuestions: loadQuestions,
 				currentQuestion: currentQuestion,
 			}}

@@ -1,17 +1,19 @@
 import React from "react";
 import Directions from "../minicomponents/Directions";
 import Question from "../minicomponents/Question";
-import Options from "../minicomponents/Options";
+import OptionsList from "../minicomponents/OptionsList";
 
-function Play({ data, counter, directions }) {
+function Play({ data }) {
 	return (
-		<div className="game__page">
-			<Question question={data.question} />
-			<div className="">
-				<Options counter={counter} answers={data.answers} ans={data.answer} />
+		<>
+			<div className="game__page">
+				<Question question={data.question} />
+				<div className="">
+					<OptionsList select={data} />
+				</div>
+				<Directions />
 			</div>
-			<Directions directions={directions} />
-		</div>
+		</>
 	);
 }
 
